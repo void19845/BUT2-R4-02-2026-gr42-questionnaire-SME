@@ -1,13 +1,15 @@
 package universite_paris8.iut.commons.dtos;
 
 import java.util.List;
+import universite_paris8.iut.commons.enums.Difficulte;
+import universite_paris8.iut.commons.enums.Langue;
 
 public class QuestionDTO {
     private int numero;
-    private String langue;
+    private Langue langue;
     private String texte;
     private List<PropositionDTO> propositions;
-    private int difficulte;
+    private Difficulte difficulte;
     private int score;
     private String explication;
     private String reference;
@@ -22,11 +24,11 @@ public class QuestionDTO {
         this.numero = numero;
     }
 
-    public String getLangue() {
+    public Langue getLangue() {
         return langue;
     }
 
-    public void setLangue(String langue) {
+    public void setLangue(Langue langue) {
         this.langue = langue;
     }
 
@@ -46,11 +48,11 @@ public class QuestionDTO {
         this.propositions = propositions;
     }
 
-    public int getDifficulte() {
+    public Difficulte getDifficulte() {
         return difficulte;
     }
 
-    public void setDifficulte(int difficulte) {
+    public void setDifficulte(Difficulte difficulte) {
         this.difficulte = difficulte;
     }
 
