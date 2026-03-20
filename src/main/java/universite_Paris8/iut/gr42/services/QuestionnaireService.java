@@ -35,16 +35,19 @@ public class QuestionnaireService implements IQuestionnaireService {
         try (BufferedReader br = new BufferedReader(new FileReader(fichier))) {
             String ligne;
             while ((ligne = br.readLine()) != null) {
+                // Remove BOM if present (usually at the start of the first line)
+                ligne = ligne.replace("\uFEFF", "");
+
                 // Ignore empty lines
                 if (ligne.trim().isEmpty()) {
                     continue;
                 }
                 
-                String[] colonnes = ligne.split("\t");
+                String[] colonnes = ligne.split(";", -1);
                 
                 // Le fichier doit avoir au moins 9 colonnes
                 if (colonnes.length < 9) {
-                    throw new ExceptionFormatIncorrect("Le fichier CSV doit contenir 9 colonnes séparées par des tabulations.");
+                    throw new ExceptionFormatIncorrect("Le fichier CSV doit contenir au moins 9 colonnes séparées par des points-virgules.");
                 }
                 
                 try {
@@ -56,7 +59,7 @@ public class QuestionnaireService implements IQuestionnaireService {
                     String reponse = colonnes[5].trim();
                     int difficulte = Integer.parseInt(colonnes[6].trim());
                     String explication = colonnes[7].trim();
-                    String reference = colonnes[8].trim();
+                    String reference = (colonnes.length > 8) ? colonnes[8].trim() : "";
                     
                     if (firstLine) {
                         questionnaire.setIdentifiant(idQuestionnaire);
