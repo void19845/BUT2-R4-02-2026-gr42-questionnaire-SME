@@ -1,0 +1,11 @@
+universite_Paris8/iut/gr42/controller/QuestionnaireController.class
+universite_Paris8/iut/gr42/Exceptions/ExceptionFormatIncorrect.class
+universite_Paris8/iut/gr42/dto/PropositionDTO.class
+universite_Paris8/iut/gr42/interface_service/IQuestionnaireService.class
+universite_Paris8/iut/gr42/Exceptions/ExceptionErreurLecture.class
+universite_Paris8/iut/gr42/App.class
+universite_Paris8/iut/gr42/dto/QuestionnaireDTO.class
+universite_Paris8/iut/gr42/Exceptions/ExceptionFichierNonTrouve.class
+universite_Paris8/iut/gr42/Exceptions/ExceptionPasLesDroits.class
+universite_Paris8/iut/gr42/services/QuestionnaireService.class
+universite_Paris8/iut/gr42/dto/QuestionDTO.class

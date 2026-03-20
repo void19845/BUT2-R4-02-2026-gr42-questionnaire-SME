@@ -1,0 +1,11 @@
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/App.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/Exceptions/ExceptionErreurLecture.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/Exceptions/ExceptionFichierNonTrouve.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/Exceptions/ExceptionFormatIncorrect.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/Exceptions/ExceptionPasLesDroits.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/controller/QuestionnaireController.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/dto/PropositionDTO.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/dto/QuestionDTO.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/dto/QuestionnaireDTO.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/interface_service/IQuestionnaireService.java
+/Users/romain/Documents/ProjetUnivS2/Java/tquoiz/BUT2-R4-02-2026-gr42-questionnaire-SME/src/main/java/universite_Paris8/iut/gr42/services/QuestionnaireService.java

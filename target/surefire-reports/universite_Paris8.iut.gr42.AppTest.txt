@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: universite_Paris8.iut.gr42.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 s -- in universite_Paris8.iut.gr42.AppTest
