@@ -17,7 +17,8 @@ public class QuestionDTO {
     private String reference;
     private List<PropositionDTO> propositions;
 
-    public QuestionDTO(int numero, String langue, String texte, String reponse, int difficulte, String explication, String reference) {
+    public QuestionDTO(int numero, String langue, String texte, String reponse, int difficulte, String explication,
+            String reference) {
         this.numero = numero;
         this.langue = langue;
         this.texte = texte;
@@ -82,7 +83,8 @@ public class QuestionDTO {
     }
 
     /**
-     * Vérifie si la réponse fournie est correcte (insensible à la casse et sans espaces superflus).
+     * Vérifie si la réponse fournie est correcte (insensible à la casse et sans
+     * espaces superflus).
      *
      * @param reponseUtilisateur la réponse donnée par l'utilisateur
      * @return vrai si la réponse est correcte
@@ -92,6 +94,38 @@ public class QuestionDTO {
             return false;
         }
         return this.reponse.trim().equalsIgnoreCase(reponseUtilisateur.trim());
+    }
+
+    public void afficherTexte() {
+        System.out.println("--- Question " + this.numero + " (" + this.getDifficulteLibelle() + ") ---");
+        System.out.println("Texte : " + this.texte);
+    }
+
+    public void afficherReponse() {
+        System.out.println("Réponse : " + this.reponse);
+    }
+
+    public void afficherExplication() {
+        System.out.println("Explication : " + this.explication);
+    }
+
+    public void afficherReference() {
+        if (this.reference != null && !this.reference.trim().isEmpty()) {
+            System.out.println("Référence : " + this.reference);
+        }
+    }
+
+    public void afficherQuestion() {
+        this.afficherTexte();
+        this.afficherReponse();
+        this.afficherExplication();
+        this.afficherReference();
+        if (this.propositions != null && !this.propositions.isEmpty()) {
+            System.out.println("Propositions :");
+            for (PropositionDTO p : this.propositions) {
+                System.out.println("  - " + p.toString());
+            }
+        }
     }
 
     @Override
