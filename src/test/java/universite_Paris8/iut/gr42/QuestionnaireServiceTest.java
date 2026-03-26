@@ -1,5 +1,5 @@
 package universite_Paris8.iut.gr42;
-
+import universite_Paris8.iut.gr42.mock.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -7,7 +7,6 @@ import universite_Paris8.iut.gr42.Exceptions.*;
 import universite_Paris8.iut.gr42.dto.QuestionDTO;
 import universite_Paris8.iut.gr42.dto.QuestionnaireDTO;
 import universite_Paris8.iut.gr42.interface_service.IQuestionnaireService;
-import universite_Paris8.iut.gr42.mocks.*;
 
 import java.util.List;
 
@@ -131,9 +130,9 @@ class QuestionnaireServiceTest {
         // ASSERT – première question
         List<QuestionDTO> questions = resultat.getQuestions();
         assertAll("Première question",
-                () -> assertEquals(1,                           questions.get(0).getNumQuestion()),
+                () -> assertEquals(1,                           questions.get(0).getNumero()),
                 () -> assertEquals("fr",                        questions.get(0).getLangue()),
-                () -> assertEquals("Qu'est-ce qu'une classe ?", questions.get(0).getLibelleQuestion()),
+                () -> assertEquals("Qu'est-ce qu'une classe ?", questions.get(0).getTexte()),
                 () -> assertEquals("Un modèle d'objet",         questions.get(0).getReponse()),
                 () -> assertEquals(2,                           questions.get(0).getDifficulte()),
                 () -> assertEquals("JavaDoc",                   questions.get(0).getReference())
