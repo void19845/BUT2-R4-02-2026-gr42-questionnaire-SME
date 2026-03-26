@@ -20,4 +20,11 @@ public interface IQuestionnaireService {
      */
     QuestionnaireDTO chargerQuestionnaire(String fichier) 
             throws ExceptionFichierNonTrouve, ExceptionPasLesDroits, ExceptionFormatIncorrect, ExceptionErreurLecture;
+
+    /**
+     * Affiche les questions d'un questionnaire donné.
+     * 
+     * @param questionnaire Le questionnaire dont on souhaite afficher les questions.
+     */
+    void afficherQuestions(QuestionnaireDTO questionnaire);
 }
